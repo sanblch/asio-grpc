@@ -1,0 +1,4 @@
+sources:
+  "1.7.0":
+    url: "https://github.com/sanblch/asio-grpc/archive/refs/heads/master.zip"
+    sha256: "102bfed20bc1c98795867e8a2bf5587e83df08162e48f38499ec18c2b5fd2f74"

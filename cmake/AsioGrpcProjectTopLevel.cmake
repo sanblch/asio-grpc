@@ -13,7 +13,11 @@
 # limitations under the License.
 
 if(${CMAKE_VERSION} VERSION_GREATER_EQUAL 3.21)
+  if(CONAN_EXPORTED)
+    set(ASIO_GRPC_PROJECT_IS_TOP_LEVEL ${CONAN_EXPORTED})
+  else()
     set(ASIO_GRPC_PROJECT_IS_TOP_LEVEL ${PROJECT_IS_TOP_LEVEL})
+  endif()
 else()
     get_directory_property(_asio_grpc_parent_dir PARENT_DIRECTORY)
     if(_asio_grpc_parent_dir)
